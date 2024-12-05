@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Acharya - Business Analyst Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+        }
+
+        .hero {
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .btn-resume {
+            background-color: #28a745;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-resume:hover {
+            background-color: #218838;
+            color: #fff;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        .skill-card {
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.1);
+            background-color: #f0f0f0;
+        }
+
+        .methodology-card, .analytics-card, .soft-skills-card {
+            background: linear-gradient(135deg, #87CEFA, #00BFFF);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .methodology-card:hover, .analytics-card:hover, .soft-skills-card:hover {
+            transform: scale(1.1);
+            background-color: #1E90FF;
+        }
+
+        .work-card {
+            background: linear-gradient(135deg, #6A5ACD, #48D1CC);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .work-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .work-card .card-title {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .work-card .card-text {
+            color: #f0f0f0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #6a11cb, #2575fc); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #ffffff; font-size: 1.5rem; font-weight: bold;">Hari Acharya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: #ffffff; transition: color 0.3s;" onmouseover="this.style.color='#ffdd57';" onmouseout="this.style.color='#ffffff';">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center" style="background: linear-gradient(135deg, #6a11cb 40%, #2575fc 40%); height: 100vh; padding: 0 3rem; position: relative;">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row w-100">
+                <div class="col-md-6 d-flex flex-column justify-content-center text-start" style="padding: 2rem;">
+                    <h1 style="color: #ffffff; font-size: 2.5rem; font-weight: 800; animation: fadeInText 2s ease-in-out;">Hello, I am Hari Acharya</h1>
+                    <p style="color: #f0f0f0; font-size: 1.1rem; font-weight: bold; animation: slideIn 2s ease-in-out;">I am a Business Analyst passionate about transforming data into actionable insights.</p>
+                    <div class="d-flex mt-4">
+                        <a href="resume.pdf" class="btn btn-primary me-3" target="_blank" style="font-weight: 600; color: #ffffff; padding: 12px 24px; border-radius: 8px;" download>Download My Resume</a>
+                        <a href="#contact" class="btn btn-outline-light" style="font-weight: 600; padding: 12px 24px; border-radius: 8px; color: #ffffff; border-color: #ffffff;">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-md-6" style="display: flex; align-items: center; justify-content: center;">
+                    <img src="background.gif" alt="Business Analytics" class="img-fluid" style="width: 80%; height: auto; box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); border-radius: 12px;">
+                </div>
+            </div>
+        </div>
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="myphoto.jpg" alt="Hari Acharya" class="img-fluid rounded-circle mb-4" style="animation: fadeIn 2s ease-in-out;">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">Results-driven Business Analyst with a proven track record of delivering high-impact solutions through strategic requirements gathering, data analysis, and collaboration. Skilled in Agile methodologies, stakeholder management, and leveraging data insights to optimize business processes.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Experience:</strong> 8+ years in business analysis across multiple industries including Technology, Finance, and Telecommunications</li>
+                        <li><strong>Industry:</strong> E-commerce, Healthcare, Telecommunications, Finance</li>
+                        <li><strong>Tools:</strong> Jira, Miro, Figma, Power BI, Tableau, SQL, MySQL, Microsoft Suite</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <h3>75+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>50+</h3>
+                    <p>Teams Collaborated</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>300+</h3>
+                    <p>Happy Stakeholders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" data-aos="fade-right">
+        <div class="container text-center">
+            <h2>Key Skills</h2>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-12">
+                    <h4 class="text-center mb-3">Tools</h4>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="skill-card m-3 p-3" style="background: #6a11cb; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/jira.svg" alt="Jira" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Jira</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #ff6347; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/miro.svg" alt="Miro" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Miro</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #3cb371; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/figma.svg" alt="Figma" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Figma</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #ffa500; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/microsoft.svg" alt="Microsoft Suite" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Microsoft Suite</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #1e90ff; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/google.svg" alt="Google Workspace" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Google Workspace</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #ffd700; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/powerbi.svg" alt="Power BI" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Power BI</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #4682b4; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/tableau.svg" alt="Tableau" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">Tableau</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #db7093; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mysql.svg" alt="MySQL" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">MySQL</p>
+                        </div>
+                        <div class="skill-card m-3 p-3" style="background: #8a2be2; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/sqlite.svg" alt="SQL" class="img-fluid mb-2" style="height: 50px;">
+                            <p class="mb-0">SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <h4 class="text-center mb-3">Methodologies</h4>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">Agile (Scrum, Kanban)</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">SDLC</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">Backlog Management</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">User Story Creation</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">Acceptance Criteria</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">User Acceptance Testing (UAT)</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">Wireframing</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">UX/UI Design Principles</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">Process Mapping</p>
+                        </div>
+                        <div class="methodology-card m-3 p-3">
+                            <p class="mb-0">Requirements Gathering</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <h4 class="text-center mb-3">Data Analytics</h4>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Data Visualization</p>
+                        </div>
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Sales and Customer Data Analysis</p>
+                        </div>
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Trend Analysis</p>
+                        </div>
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Financial Forecasting</p>
+                        </div>
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Market Research</p>
+                        </div>
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Reporting & Dashboards</p>
+                        </div>
+                        <div class="analytics-card m-3 p-3">
+                            <p class="mb-0">Key Performance Indicators (KPIs)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-5">
+                    <h4 class="text-center mb-3">Soft Skills</h4>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Analytical Skills</p>
+                        </div>
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Problem Solving</p>
+                        </div>
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Critical Thinking</p>
+                        </div>
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Creativity</p>
+                        </div>
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Collaboration</p>
+                        </div>
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Adaptability</p>
+                        </div>
+                        <div class="soft-skills-card m-3 p-3">
+                            <p class="mb-0">Stakeholder Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section" data-aos="zoom-in-up">
+        <div class="container text-center">
+            <h2>Work & Projects</h2>
+            <p class="lead">Below are some of the projects I've successfully delivered as a business analyst, demonstrating my expertise in Agile methodologies, data analysis, and project management.</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card work-card" data-aos="flip-left">
+                        <div class="card-body">
+                            <h5 class="card-title">Resume Parsing Feature</h5>
+                            <p class="card-text">Collaborated to gather requirements, resulting in the delivery of a resume parsing feature that improved processing speed by 20%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card work-card" data-aos="flip-left">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Engagement Strategy</h5>
+                            <p class="card-text">Led market research initiatives that increased customer engagement by 15% during the Xumo Box launch.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card work-card" data-aos="flip-left">
+                        <div class="card-body">
+                            <h5 class="card-title">Sales Process Optimization</h5>
+                            <p class="card-text">Identified key bottlenecks in sales, leading to process improvements that saved 10 hours per week in manual work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" data-aos="fade-up">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+            <p class="lead">I'm currently looking for opportunities as a Business Analyst. Feel free to reach out to me!</p>
+            <form class="mt-4">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row mt-3" data-aos="fade-up">
+                    <div class="col-12">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3" data-aos="zoom-in">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Hari Acharya. All Rights Reserved.</p>
+            <div class="social-icons mt-3">
+                <a href="https://www.linkedin.com/in/harry-acharya/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" style="width: 30px; height: 30px;"></a>
+                <a href="#" ><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub" style="width: 30px; height: 30px;"></a>
+                <a href="#" ><img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/twitter.svg" alt="Twitter" style="width: 30px; height: 30px;"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.0/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
