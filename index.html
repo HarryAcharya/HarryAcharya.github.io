@@ -1,6 +1,7 @@
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,18 +20,18 @@
             --light: #f8f9fa;
             --grad: linear-gradient(135deg, #6a11cb, #2575fc);
         }
-
+ 
         html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-
+ 
         body {
             font-family: 'Montserrat', sans-serif;
             line-height: 1.7;
             color: #444;
             overflow-x: hidden;
         }
-
+ 
         ::selection { background: var(--primary); color: #fff; }
-
+ 
         /* ---------- Navbar ---------- */
         .navbar {
             background: linear-gradient(135deg, rgba(106, 17, 203, .95), rgba(37, 117, 252, .95));
@@ -60,7 +61,7 @@
         }
         .navbar .nav-link:hover { color: var(--accent) !important; }
         .navbar .nav-link:hover::after, .navbar .nav-link.active::after { width: 70%; }
-
+ 
         /* ---------- Hero ---------- */
         .hero {
             min-height: 100vh;
@@ -139,7 +140,7 @@
             transition: all .3s ease;
         }
         .btn-hero-outline:hover { background: #fff; color: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 22px rgba(0,0,0,.25); }
-
+ 
         .hero-photo-wrap { position: relative; display: inline-block; }
         .hero-photo-wrap::before {
             content: '';
@@ -173,11 +174,11 @@
         .badge-1 { top: 4%; left: -12%; }
         .badge-2 { bottom: 10%; right: -14%; animation-delay: 1.4s; }
         .badge-3 { bottom: -4%; left: 4%; animation-delay: 2.6s; }
-
+ 
         .hero-arrow { position: absolute; bottom: 26px; left: 50%; transform: translateX(-50%); }
         .hero-arrow a { color: #fff; font-size: 1.8rem; opacity: .8; animation: bounceDown 1.8s infinite; display: inline-block; }
         @keyframes bounceDown { 0%,100% { transform: translateY(0);} 50% { transform: translateY(10px);} }
-
+ 
         /* ---------- Sections ---------- */
         .section { padding: 90px 0; }
         .section-title { font-weight: 800; font-size: 2.3rem; color: var(--dark); position: relative; display: inline-block; margin-bottom: 12px; }
@@ -192,7 +193,7 @@
         }
         .section-sub { color: #777; max-width: 680px; margin: 22px auto 0; }
         .bg-light { background-color: #f6f7fb !important; }
-
+ 
         /* ---------- About ---------- */
         .about-photo {
             width: 100%;
@@ -232,7 +233,7 @@
             margin-bottom: 4px;
         }
         .stat-box p { color: #666; font-weight: 600; margin: 0; font-size: .92rem; }
-
+ 
         /* ---------- Experience timeline ---------- */
         .timeline { position: relative; max-width: 920px; margin: 40px auto 0; }
         .timeline::before {
@@ -287,7 +288,7 @@
             .timeline-item { width: 100%; left: 0 !important; text-align: left !important; padding: 0 0 40px 44px; }
             .timeline-item .timeline-dot { left: 2px !important; right: auto !important; }
         }
-
+ 
         /* ---------- Skills ---------- */
         .skill-card {
             background: #fff;
@@ -300,7 +301,7 @@
         .skill-card:hover { transform: translateY(-8px) scale(1.05); box-shadow: 0 16px 30px rgba(31, 24, 73, 0.16); }
         .skill-card i { font-size: 2.1rem; margin-bottom: 8px; display: block; }
         .skill-card p { font-weight: 600; color: var(--dark); margin: 0; font-size: .92rem; }
-
+ 
         .chip {
             display: inline-block;
             padding: 11px 22px;
@@ -319,7 +320,7 @@
         .chip-soft { background: linear-gradient(135deg, #ff6a88, #ff9a8b); }
         .skills-group-title { font-weight: 700; color: var(--dark); margin: 44px 0 8px; }
         .skills-group-title i { color: var(--primary); margin-right: 8px; }
-
+ 
         /* ---------- Projects ---------- */
         .work-card {
             background: linear-gradient(145deg, #fff, #fbfbff);
@@ -364,7 +365,7 @@
         }
         .work-card a.project-link { color: var(--secondary); font-weight: 700; font-size: .9rem; text-decoration: none; }
         .work-card a.project-link:hover { text-decoration: underline; }
-
+ 
         /* ---------- Education / Certifications ---------- */
         .edu-card {
             background: #fff;
@@ -403,7 +404,7 @@
         .cert-item i { color: var(--primary); font-size: 1.4rem; margin-right: 16px; min-width: 28px; }
         .cert-item strong { color: var(--dark); display: block; font-size: .96rem; }
         .cert-item span { color: #888; font-size: .84rem; }
-
+ 
         /* ---------- Contact ---------- */
         .contact-section {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -452,7 +453,7 @@
             transition: all .3s ease;
         }
         .btn-send:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); background: #ffe784; }
-
+ 
         /* ---------- Footer ---------- */
         footer { background: var(--dark); color: #cfc8e8; padding: 36px 0; }
         .social-icons a {
@@ -468,7 +469,7 @@
             transition: all .3s ease;
         }
         .social-icons a:hover { background: var(--grad); transform: translateY(-5px) scale(1.1); }
-
+ 
         /* ---------- Back to top ---------- */
         #backToTop {
             position: fixed;
@@ -487,10 +488,10 @@
         }
         #backToTop.show { opacity: 1; visibility: visible; }
         #backToTop:hover { transform: translateY(-5px); }
-
+ 
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideIn { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
+ 
         @media (max-width: 991px) {
             .hero h1 { font-size: 2.4rem; }
             .hero-photo { width: 250px; height: 250px; }
@@ -499,9 +500,9 @@
         }
     </style>
 </head>
-
+ 
 <body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
-
+ 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
@@ -522,7 +523,7 @@
             </div>
         </div>
     </nav>
-
+ 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
@@ -554,7 +555,7 @@
             <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
         </div>
     </section>
-
+ 
     <!-- About Section -->
     <section id="about" class="section bg-light">
         <div class="container text-center">
@@ -603,7 +604,7 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container text-center">
@@ -679,13 +680,13 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Skills Section -->
     <section id="skills" class="section bg-light">
         <div class="container text-center">
             <h2 class="section-title" data-aos="fade-up">Key Skills</h2>
             <p class="section-sub" data-aos="fade-up">The tools, methods, and strengths I bring to every project.</p>
-
+ 
             <h5 class="skills-group-title" data-aos="fade-up"><i class="fa-solid fa-toolbox"></i>Analytics &amp; BI Tools</h5>
             <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up">
                 <div class="skill-card m-2"><i class="fa-solid fa-database" style="color:#2575fc;"></i><p>SQL</p></div>
@@ -699,7 +700,7 @@
                 <div class="skill-card m-2"><i class="fa-brands fa-figma" style="color:#a259ff;"></i><p>Figma</p></div>
                 <div class="skill-card m-2"><i class="fa-solid fa-diagram-project" style="color:#ffd02f;"></i><p>Miro &amp; Visio</p></div>
             </div>
-
+ 
             <h5 class="skills-group-title" data-aos="fade-up"><i class="fa-solid fa-clipboard-check"></i>Business Analysis</h5>
             <div data-aos="fade-up">
                 <span class="chip chip-ba">Requirements Elicitation</span>
@@ -713,7 +714,7 @@
                 <span class="chip chip-ba">Sprint Planning</span>
                 <span class="chip chip-ba">Backlog Refinement</span>
             </div>
-
+ 
             <h5 class="skills-group-title" data-aos="fade-up"><i class="fa-solid fa-magnifying-glass-chart"></i>Data &amp; Analytics</h5>
             <div data-aos="fade-up">
                 <span class="chip chip-data">Forecasting Models</span>
@@ -725,7 +726,7 @@
                 <span class="chip chip-data">Market Research</span>
                 <span class="chip chip-data">Trend Analysis</span>
             </div>
-
+ 
             <h5 class="skills-group-title" data-aos="fade-up"><i class="fa-solid fa-people-group"></i>Professional Strengths</h5>
             <div data-aos="fade-up">
                 <span class="chip chip-soft">Stakeholder Management</span>
@@ -738,14 +739,14 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Projects Section -->
     <section id="work" class="section">
         <div class="container text-center">
             <h2 class="section-title" data-aos="fade-up">Projects &amp; Impact</h2>
             <p class="section-sub" data-aos="fade-up">End-to-end business analysis and analytics projects spanning insurance, federal compliance, healthcare policy, lending risk, and retention strategy.</p>
             <div class="row mt-5 g-4">
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -759,7 +760,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -772,7 +773,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="100">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -786,7 +787,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="200">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -799,7 +800,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="100">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -814,7 +815,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="200">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -829,7 +830,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
                 <div class="col-md-6 col-lg-4" data-aos="zoom-in-up" data-aos-delay="300">
                     <div class="card work-card">
                         <div class="card-top"></div>
@@ -842,7 +843,7 @@
                         </div>
                     </div>
                 </div>
-
+ 
             </div>
             <div class="mt-5" data-aos="zoom-in">
                 <a href="https://github.com/HarryAcharya" target="_blank" rel="noopener" class="btn btn-lg me-2 mb-2" style="background: var(--grad); color:#fff; font-weight:700; border-radius:50px; padding: 13px 36px;">
@@ -854,7 +855,7 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Education & Certifications -->
     <section id="education" class="section bg-light">
         <div class="container text-center">
@@ -910,7 +911,7 @@
             </div>
         </div>
     </section>
-
+ 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container text-center">
@@ -951,7 +952,7 @@
             </form>
         </div>
     </section>
-
+ 
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
@@ -963,17 +964,17 @@
             <p class="mb-0">&copy; <span id="year"></span> Hari Acharya · Business Analyst · All Rights Reserved.</p>
         </div>
     </footer>
-
+ 
     <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({ once: true });
-
+ 
         // Footer year
         document.getElementById('year').textContent = new Date().getFullYear();
-
+ 
         // Typing effect
         const roles = ["Business Analyst", "Requirements & UAT", "SQL, Power BI & Python", "Agile Delivery", "M.S. Data Analytics Candidate"];
         const typedEl = document.getElementById('typed');
@@ -997,7 +998,7 @@
             }
         }
         typeLoop();
-
+ 
         // Navbar shrink + back-to-top
         const nav = document.getElementById('mainNav');
         const topBtn = document.getElementById('backToTop');
@@ -1006,7 +1007,7 @@
             topBtn.classList.toggle('show', window.scrollY > 500);
         });
         topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-
+ 
         // Active nav link highlighting
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.navbar .nav-link');
@@ -1019,7 +1020,7 @@
                 link.classList.toggle('active', link.getAttribute('href') === '#' + current);
             });
         });
-
+ 
         // Collapse mobile menu on link click
         document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
             link.addEventListener('click', () => {
@@ -1031,5 +1032,5 @@
         });
     </script>
 </body>
-
+ 
 </html>
